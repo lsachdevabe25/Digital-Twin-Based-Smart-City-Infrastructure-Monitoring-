@@ -2,7 +2,8 @@ import React from 'react';
 
 /**
  * Renders the hydraulic network topology graph from backend /network data.
- * viewBox is 0 0 100 100 to match the x,y coordinates from GET /network.
+ * Backend coordinates range roughly x: 80-530, y: 80-430, so the viewBox
+ * below is sized to fit that range, and all sizes are scaled to match.
  */
 export function NetworkGraphSVG({
   nodes = [],
@@ -61,10 +62,10 @@ export function NetworkGraphSVG({
   return (
     <div
       className={`network-graph-container ${className}`}
-      style={{ width: '100%', height: '420px' }}
+      style={{ width: '100%', height: '460px' }}
     >
       <svg
-        viewBox="0 0 100 100"
+        viewBox="30 40 560 430"
         preserveAspectRatio="xMidYMid meet"
         style={{ width: '100%', height: '100%', display: 'block' }}
         role="img"
@@ -91,28 +92,28 @@ export function NetworkGraphSVG({
                   x1={u.x} y1={u.y}
                   x2={v.x} y2={v.y}
                   stroke="transparent"
-                  strokeWidth="4"
+                  strokeWidth="24"
                 />
                 {/* Visible pipe */}
                 <line
                   x1={u.x} y1={u.y}
                   x2={v.x} y2={v.y}
                   stroke={color}
-                  strokeWidth={isSelected ? 1.4 : 0.8}
-                  strokeDasharray={isDashed ? '1.5 1.5' : 'none'}
+                  strokeWidth={isSelected ? 8 : 4.5}
+                  strokeDasharray={isDashed ? '9 9' : 'none'}
                   strokeLinecap="round"
                 />
-                {/* Pipe ID label at midpoint – only for selected pipe */}
+                {/* Pipe ID label at midpoint, only for selected pipe */}
                 {isSelected && (
                   <text
                     x={(u.x + v.x) / 2}
-                    y={(u.y + v.y) / 2 - 1.5}
+                    y={(u.y + v.y) / 2 - 9}
                     textAnchor="middle"
-                    fontSize="1.6"
+                    fontSize="10"
                     fontWeight="700"
                     fill="#1d4ed8"
                     stroke="#fff"
-                    strokeWidth="0.5"
+                    strokeWidth="3"
                     paintOrder="stroke"
                   >
                     {pipe.id}
@@ -141,21 +142,21 @@ export function NetworkGraphSVG({
                 {/* Affected halo ring */}
                 {isAffected && (
                   <circle
-                    r={4.2}
+                    r={25}
                     fill="none"
                     stroke="#dc2626"
-                    strokeWidth="0.6"
-                    strokeDasharray="1 1"
+                    strokeWidth="3.5"
+                    strokeDasharray="6 6"
                     opacity="0.85"
                   />
                 )}
 
                 {/* Main node circle */}
                 <circle
-                  r={2.5}
+                  r={15}
                   fill={fill}
                   stroke={stroke}
-                  strokeWidth="0.5"
+                  strokeWidth="3"
                 />
 
                 {/* Type glyph inside circle */}
@@ -163,11 +164,11 @@ export function NetworkGraphSVG({
                   <text
                     textAnchor="middle"
                     dominantBaseline="central"
-                    fontSize="1.6"
+                    fontSize="10"
                     fontWeight="700"
                     fill={stroke}
                     stroke="#fff"
-                    strokeWidth="0.3"
+                    strokeWidth="2"
                     paintOrder="stroke"
                   >
                     {glyph}
@@ -176,18 +177,18 @@ export function NetworkGraphSVG({
 
                 {/* Junction dot */}
                 {node.type === 'junction' && (
-                  <circle r={0.8} fill={stroke} />
+                  <circle r={5} fill={stroke} />
                 )}
 
-                {/* Node name label – 4 units below, with white halo */}
+                {/* Node name label below the circle, with white halo */}
                 <text
-                  y={4}
+                  y={30}
                   textAnchor="middle"
-                  fontSize="2.2"
+                  fontSize="13"
                   fontWeight="600"
                   fill="#0f172a"
                   stroke="#fff"
-                  strokeWidth="0.6"
+                  strokeWidth="3.5"
                   paintOrder="stroke"
                 >
                   {node.name}
