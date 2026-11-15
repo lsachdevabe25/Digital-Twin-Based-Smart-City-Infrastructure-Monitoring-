@@ -60,11 +60,12 @@ cd Digital-Twin-Based-Smart-City-Infrastructure-Monitoring-
 ```bash
 cd BACKEND
 python -m venv venv
-venv\Scripts\activate        # Windows
-# source venv/bin/activate   # macOS / Linux
+venv\Scripts\activate
 pip install -r requirements.txt
-python app.py
+python -m uvicorn app:app --reload
 ```
+
+The backend runs at http://127.0.0.1:8000
 
 ### 3. Run the frontend
 
