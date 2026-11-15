@@ -1,18 +1,26 @@
-Digital Twin Based Smart City Infrastructure Monitoring
+# Digital Twin Based Smart City Infrastructure Monitoring
 
-A digital twin platform for monitoring and predicting the performance of smart city infrastructure. The project models the town of Rampur and lets users view the state of key utilities, spot problems, and plan repairs from a single dashboard.
+A digital twin platform for monitoring and predicting the performance of smart city infrastructure. The project models the town of **Rampur** and lets users view the state of key utilities, spot problems, and plan repairs from a single dashboard.
 
-Features
-Power Grid monitoring: view the status and load of the electrical network
-Water Network monitoring: track the water supply infrastructure
-Repair Plan: prioritise and plan maintenance based on the twin's data
-Digital twin engine: a Python backend that simulates and stores the city's infrastructure state
-Persistent state: runtime state is saved so the twin can continue where it left off
-Tech Stack:
-frontend:-React,Vite,CSS
-backend:-Python
-Testing:-pytest
-PROJECT STRUCTURE:-
+## Features
+
+- **Power Grid monitoring**: view the status and load of the electrical network
+- **Water Network monitoring**: track the water supply infrastructure
+- **Repair Plan**: prioritise and plan maintenance based on the twin's data
+- **Digital twin engine**: a Python backend that simulates and stores the city's infrastructure state
+- **Persistent state**: runtime state is saved so the twin can continue where it left off
+
+## Tech Stack
+
+| Part | Technology |
+|------|------------|
+| Frontend | React, Vite, CSS |
+| Backend | Python |
+| Testing | pytest |
+
+## Project Structure
+
+```
 digital twin smart city/
 ├── BACKEND/
 │   ├── app.py              # Backend entry point
@@ -30,50 +38,71 @@ digital twin smart city/
 │   ├── package.json
 │   └── vite.config.js
 └── README.md
-Getting Started
-Prerequisites:-
-Python 3.9+
-Node.js 18+
-Git
-1. Clone the repository
+```
+
+## Getting Started
+
+### Prerequisites
+
+- [Python 3.9+](https://www.python.org/downloads/)
+- [Node.js 18+](https://nodejs.org/)
+- [Git](https://git-scm.com/)
+
+### 1. Clone the repository
+
+```bash
 git clone https://github.com/lsachdevabe25/Digital-Twin-Based-Smart-City-Infrastructure-Monitoring-.git
 cd Digital-Twin-Based-Smart-City-Infrastructure-Monitoring-
-2. Run the backend
+```
+
+### 2. Run the backend
+
+```bash
 cd BACKEND
 python -m venv venv
 venv\Scripts\activate        # Windows
 # source venv/bin/activate   # macOS / Linux
 pip install -r requirements.txt
 python app.py
-3. Run the frontend
+```
+
+### 3. Run the frontend
 
 Open a second terminal:
 
-bash
+```bash
 cd FRONTEND
 npm install
 npm run dev
+```
 
-Then open the local URL shown in the terminal (usually http://localhost:5173).
-Environment variables
+Then open the local URL shown in the terminal (usually `http://localhost:5173`).
 
-Copy FRONTEND/.env.example to FRONTEND/.env and fill in the values. The .env file is not uploaded to GitHub.
-Running Tests
-bash
+### Environment variables
+
+Copy `FRONTEND/.env.example` to `FRONTEND/.env` and fill in the values. The `.env` file is not uploaded to GitHub.
+
+## Running Tests
+
+```bash
 cd BACKEND
 pytest
-Screenshots
+```
 
-![alt text](image.png)
+## Screenshots
 ![alt text](image-1.png)
 ![alt text](image-2.png)
 ![alt text](image-3.png)
 ![alt text](image-4.png)
 ![alt text](image-5.png)
-Author
+![alt text](image.png)
 
-Lipieka Sachdeva Thapar Institute of Engineering and Technology
 
-License
+## Author
+
+**Lipieka Sachdeva**
+Thapar Institute of Engineering and Technology
+
+## License
 
 This project is for academic purposes.
