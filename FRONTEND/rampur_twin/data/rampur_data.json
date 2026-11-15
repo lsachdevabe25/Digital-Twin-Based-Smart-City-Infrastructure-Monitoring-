@@ -1,0 +1,264 @@
+{
+  "nodes": [
+    {
+      "id": "RES-RMP-0001",
+      "type": "reservoir",
+      "name": "Main Tank",
+      "x": 80,
+      "y": 150
+    },
+    {
+      "id": "J-RMP-0001",
+      "type": "junction",
+      "name": "Market Chowk",
+      "x": 230,
+      "y": 150
+    },
+    {
+      "id": "J-RMP-0002",
+      "type": "junction",
+      "name": "Hospital Gate",
+      "x": 380,
+      "y": 80
+    },
+    {
+      "id": "HOS-RMP-0001",
+      "type": "hospital",
+      "name": "Rampur Hospital",
+      "x": 530,
+      "y": 80
+    },
+    {
+      "id": "SCH-RMP-0001",
+      "type": "school",
+      "name": "Govt School",
+      "x": 380,
+      "y": 220
+    },
+    {
+      "id": "J-RMP-0003",
+      "type": "junction",
+      "name": "Bus Stand",
+      "x": 230,
+      "y": 290
+    },
+    {
+      "id": "J-RMP-0004",
+      "type": "junction",
+      "name": "Temple Road",
+      "x": 380,
+      "y": 430
+    },
+    {
+      "id": "J-RMP-0005",
+      "type": "junction",
+      "name": "Old Colony",
+      "x": 380,
+      "y": 290
+    },
+    {
+      "id": "J-RMP-0006",
+      "type": "junction",
+      "name": "New Colony",
+      "x": 530,
+      "y": 290
+    },
+    {
+      "id": "SCH-RMP-0002",
+      "type": "school",
+      "name": "Girls School",
+      "x": 530,
+      "y": 430
+    },
+    {
+      "id": "HOS-RMP-0002",
+      "type": "hospital",
+      "name": "Health Centre",
+      "x": 530,
+      "y": 220
+    },
+    {
+      "id": "RES-RMP-0002",
+      "type": "reservoir",
+      "name": "Overhead Tank",
+      "x": 230,
+      "y": 430
+    }
+  ],
+  "pipes": [
+    {
+      "id": "PIPE-RMP-0001",
+      "from": "RES-RMP-0001",
+      "to": "J-RMP-0001",
+      "material": "cast iron",
+      "install_year": 1985,
+      "pressure_bar": 2.5,
+      "status": "operational"
+    },
+    {
+      "id": "PIPE-RMP-0002",
+      "from": "J-RMP-0001",
+      "to": "J-RMP-0002",
+      "material": "PVC",
+      "install_year": 2015,
+      "pressure_bar": 2.3,
+      "status": "operational"
+    },
+    {
+      "id": "PIPE-RMP-0003",
+      "from": "J-RMP-0002",
+      "to": "HOS-RMP-0001",
+      "material": "PVC",
+      "install_year": 2015,
+      "pressure_bar": 2.2,
+      "status": "operational"
+    },
+    {
+      "id": "PIPE-RMP-0004",
+      "from": "J-RMP-0001",
+      "to": "SCH-RMP-0001",
+      "material": "cast iron",
+      "install_year": 1990,
+      "pressure_bar": 2.4,
+      "status": "operational"
+    },
+    {
+      "id": "PIPE-RMP-0005",
+      "from": "J-RMP-0001",
+      "to": "HOS-RMP-0001",
+      "material": "PVC",
+      "install_year": 2020,
+      "pressure_bar": 2.1,
+      "status": "operational"
+    },
+    {
+      "id": "PIPE-RMP-0006",
+      "from": "J-RMP-0001",
+      "to": "J-RMP-0003",
+      "material": "cast iron",
+      "install_year": 1995,
+      "pressure_bar": 2.4,
+      "status": "operational"
+    },
+    {
+      "id": "PIPE-RMP-0007",
+      "from": "J-RMP-0003",
+      "to": "J-RMP-0004",
+      "material": "PVC",
+      "install_year": 2012,
+      "pressure_bar": 2.2,
+      "status": "operational"
+    },
+    {
+      "id": "PIPE-RMP-0008",
+      "from": "J-RMP-0003",
+      "to": "J-RMP-0005",
+      "material": "cast iron",
+      "install_year": 1998,
+      "pressure_bar": 2.3,
+      "status": "operational"
+    },
+    {
+      "id": "PIPE-RMP-0009",
+      "from": "J-RMP-0005",
+      "to": "J-RMP-0006",
+      "material": "PVC",
+      "install_year": 2018,
+      "pressure_bar": 2.1,
+      "status": "operational"
+    },
+    {
+      "id": "PIPE-RMP-0010",
+      "from": "J-RMP-0004",
+      "to": "SCH-RMP-0002",
+      "material": "PVC",
+      "install_year": 2016,
+      "pressure_bar": 2.2,
+      "status": "operational"
+    },
+    {
+      "id": "PIPE-RMP-0011",
+      "from": "J-RMP-0005",
+      "to": "HOS-RMP-0002",
+      "material": "PVC",
+      "install_year": 2019,
+      "pressure_bar": 2.2,
+      "status": "operational"
+    },
+    {
+      "id": "PIPE-RMP-0012",
+      "from": "RES-RMP-0002",
+      "to": "J-RMP-0004",
+      "material": "PVC",
+      "install_year": 2021,
+      "pressure_bar": 2.4,
+      "status": "operational"
+    }
+  ],
+  "roads": [
+    {
+      "id": "RD-RMP-0001",
+      "name": "Tank Road",
+      "condition": 0.8
+    },
+    {
+      "id": "RD-RMP-0002",
+      "name": "Hospital Road",
+      "condition": 0.9
+    },
+    {
+      "id": "RD-RMP-0003",
+      "name": "School Road",
+      "condition": 0.6
+    },
+    {
+      "id": "RD-RMP-0004",
+      "name": "Bus Stand Road",
+      "condition": 0.5
+    },
+    {
+      "id": "RD-RMP-0005",
+      "name": "Colony Road",
+      "condition": 0.65
+    },
+    {
+      "id": "RD-RMP-0006",
+      "name": "Temple Road",
+      "condition": 0.85
+    }
+  ],
+  "power": [
+    {
+      "id": "TR-RMP-0001",
+      "name": "Main Transformer",
+      "load": 0.7,
+      "status": "operational"
+    },
+    {
+      "id": "TR-RMP-0002",
+      "name": "Colony Transformer",
+      "load": 0.5,
+      "status": "operational"
+    }
+  ],
+  "runs_under": {
+    "PIPE-RMP-0001": "RD-RMP-0001",
+    "PIPE-RMP-0002": "RD-RMP-0002",
+    "PIPE-RMP-0003": "RD-RMP-0002",
+    "PIPE-RMP-0004": "RD-RMP-0003",
+    "PIPE-RMP-0005": "RD-RMP-0002",
+    "PIPE-RMP-0006": "RD-RMP-0004",
+    "PIPE-RMP-0007": "RD-RMP-0006",
+    "PIPE-RMP-0008": "RD-RMP-0005",
+    "PIPE-RMP-0009": "RD-RMP-0005",
+    "PIPE-RMP-0010": "RD-RMP-0006",
+    "PIPE-RMP-0011": "RD-RMP-0005",
+    "PIPE-RMP-0012": "RD-RMP-0006"
+  },
+  "depends_on": {
+    "RES-RMP-0001": "TR-RMP-0001",
+    "HOS-RMP-0001": "TR-RMP-0001",
+    "RES-RMP-0002": "TR-RMP-0002",
+    "HOS-RMP-0002": "TR-RMP-0002"
+  }
+}

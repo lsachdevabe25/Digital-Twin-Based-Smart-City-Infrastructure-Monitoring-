@@ -1,0 +1,122 @@
+{
+    "history": [
+        {
+            "time": "2026-11-10T08:00:00",
+            "pipe": "PIPE-RMP-0001",
+            "pressure_bar": 2.0,
+            "status": "operational"
+        }
+    ],
+    "alerts": [],
+    "pipes": {
+        "PIPE-RMP-0001": {
+            "id": "PIPE-RMP-0001",
+            "from": "RES-RMP-0001",
+            "to": "J-RMP-0001",
+            "material": "cast iron",
+            "install_year": 1985,
+            "pressure_bar": 2.0,
+            "status": "operational"
+        },
+        "PIPE-RMP-0002": {
+            "id": "PIPE-RMP-0002",
+            "from": "J-RMP-0001",
+            "to": "J-RMP-0002",
+            "material": "PVC",
+            "install_year": 2015,
+            "pressure_bar": 2.3,
+            "status": "operational"
+        },
+        "PIPE-RMP-0003": {
+            "id": "PIPE-RMP-0003",
+            "from": "J-RMP-0002",
+            "to": "HOS-RMP-0001",
+            "material": "PVC",
+            "install_year": 2015,
+            "pressure_bar": 2.2,
+            "status": "operational"
+        },
+        "PIPE-RMP-0004": {
+            "id": "PIPE-RMP-0004",
+            "from": "J-RMP-0001",
+            "to": "SCH-RMP-0001",
+            "material": "cast iron",
+            "install_year": 1990,
+            "pressure_bar": 2.4,
+            "status": "operational"
+        },
+        "PIPE-RMP-0005": {
+            "id": "PIPE-RMP-0005",
+            "from": "J-RMP-0001",
+            "to": "HOS-RMP-0001",
+            "material": "PVC",
+            "install_year": 2020,
+            "pressure_bar": 2.1,
+            "status": "operational"
+        },
+        "PIPE-RMP-0006": {
+            "id": "PIPE-RMP-0006",
+            "from": "J-RMP-0001",
+            "to": "J-RMP-0003",
+            "material": "cast iron",
+            "install_year": 1995,
+            "pressure_bar": 2.4,
+            "status": "operational"
+        },
+        "PIPE-RMP-0007": {
+            "id": "PIPE-RMP-0007",
+            "from": "J-RMP-0003",
+            "to": "J-RMP-0004",
+            "material": "PVC",
+            "install_year": 2012,
+            "pressure_bar": 2.2,
+            "status": "operational"
+        },
+        "PIPE-RMP-0008": {
+            "id": "PIPE-RMP-0008",
+            "from": "J-RMP-0003",
+            "to": "J-RMP-0005",
+            "material": "cast iron",
+            "install_year": 1998,
+            "pressure_bar": 2.3,
+            "status": "operational"
+        },
+        "PIPE-RMP-0009": {
+            "id": "PIPE-RMP-0009",
+            "from": "J-RMP-0005",
+            "to": "J-RMP-0006",
+            "material": "PVC",
+            "install_year": 2018,
+            "pressure_bar": 2.1,
+            "status": "operational"
+        },
+        "PIPE-RMP-0010": {
+            "id": "PIPE-RMP-0010",
+            "from": "J-RMP-0004",
+            "to": "SCH-RMP-0002",
+            "material": "PVC",
+            "install_year": 2016,
+            "pressure_bar": 2.2,
+            "status": "operational"
+        },
+        "PIPE-RMP-0011": {
+            "id": "PIPE-RMP-0011",
+            "from": "J-RMP-0005",
+            "to": "HOS-RMP-0002",
+            "material": "PVC",
+            "install_year": 2019,
+            "pressure_bar": 2.2,
+            "status": "operational"
+        },
+        "PIPE-RMP-0012": {
+            "id": "PIPE-RMP-0012",
+            "from": "RES-RMP-0002",
+            "to": "J-RMP-0004",
+            "material": "PVC",
+            "install_year": 2021,
+            "pressure_bar": 2.4,
+            "status": "operational"
+        }
+    },
+    "clock": "2026-11-10T08:01:00"
+}

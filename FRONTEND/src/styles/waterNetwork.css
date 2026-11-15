@@ -1,0 +1,626 @@
+/* ==========================================================================
+   Water Network Telemetry Page Styles
+   Clean Enterprise Light Theme: Navy text, white/light grey, muted blue & teal
+   ========================================================================== */
+
+.water-network-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* --------------------------------------------------------------------------
+   Header & Controls
+   -------------------------------------------------------------------------- */
+.water-header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.water-header-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.water-icon-badge {
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  background-color: var(--accent-blue-light);
+  border: 1px solid var(--accent-blue-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent-blue);
+  flex-shrink: 0;
+}
+
+.water-page-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.water-page-subtitle {
+  font-size: 12px;
+  color: var(--text-muted);
+  margin: 0;
+}
+
+.water-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.water-backend-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: var(--radius-xs);
+  background-color: var(--status-success-bg);
+  border: 1px solid var(--status-success-border);
+  color: var(--status-success-text);
+  font-weight: 600;
+}
+
+.water-live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--status-success-text);
+}
+
+.water-refresh-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 5px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  transition: all 0.15s ease;
+}
+
+.water-refresh-btn:hover {
+  background-color: var(--bg-subtle);
+  color: var(--text-primary);
+}
+
+/* --------------------------------------------------------------------------
+   KPI Summary Grid
+   -------------------------------------------------------------------------- */
+.water-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.water-kpi-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  box-shadow: var(--shadow-xs);
+}
+
+.water-kpi-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.water-kpi-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+}
+
+.water-kpi-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.1;
+}
+
+.water-kpi-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* --------------------------------------------------------------------------
+   Status Chips
+   -------------------------------------------------------------------------- */
+.pipe-status-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 2px 8px;
+  border-radius: var(--radius-xs);
+  font-size: 11px;
+  font-weight: 600;
+  border: 1px solid transparent;
+  line-height: 1.2;
+}
+
+.pipe-status-chip.chip-operational {
+  background-color: var(--accent-teal-light);
+  color: var(--accent-teal-dark);
+  border-color: var(--accent-teal-border);
+}
+
+.pipe-status-chip.chip-watch {
+  background-color: var(--status-warning-bg);
+  color: var(--status-warning-text);
+  border-color: var(--status-warning-border);
+}
+
+.pipe-status-chip.chip-leak {
+  background-color: #fef2f2;
+  color: #991b1b;
+  border-color: #fecaca;
+}
+
+.chip-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+/* --------------------------------------------------------------------------
+   Tables
+   -------------------------------------------------------------------------- */
+.water-table-wrap {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.water-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  text-align: left;
+}
+
+.water-table th {
+  padding: 9px 12px;
+  background-color: var(--bg-subtle);
+  color: var(--text-muted);
+  font-weight: 600;
+  font-size: 11px;
+  border-bottom: 1px solid var(--border-default);
+  white-space: nowrap;
+}
+
+.water-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border-light);
+  color: var(--text-secondary);
+  vertical-align: middle;
+}
+
+.water-table tr:hover td {
+  background-color: var(--bg-hover);
+}
+
+.water-pipe-code {
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.water-pressure-cell {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Risk Progress Bar */
+.risk-bar-container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: 120px;
+}
+
+.risk-bar-track {
+  flex: 1;
+  height: 6px;
+  background-color: var(--bg-subtle);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.risk-bar-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.risk-bar-fill.risk-low {
+  background-color: var(--accent-teal);
+}
+
+.risk-bar-fill.risk-med {
+  background-color: var(--status-warning-text);
+}
+
+.risk-bar-fill.risk-high {
+  background-color: #dc2626;
+}
+
+.risk-bar-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-primary);
+  min-width: 28px;
+}
+
+/* Backup Route Tag */
+.backup-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 7px;
+  border-radius: var(--radius-xs);
+  font-size: 10px;
+  font-weight: 600;
+  background-color: var(--accent-blue-light);
+  color: var(--accent-blue-dark);
+  border: 1px solid var(--accent-blue-border);
+}
+
+/* --------------------------------------------------------------------------
+   Split 2-Column Sections
+   -------------------------------------------------------------------------- */
+.water-split-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 16px;
+}
+
+/* --------------------------------------------------------------------------
+   Alerts List
+   -------------------------------------------------------------------------- */
+.alerts-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 380px;
+  overflow-y: auto;
+}
+
+.alert-item-card {
+  padding: 10px 12px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.alert-item-card.alert-sev-high {
+  border-left: 3px solid #dc2626;
+}
+
+.alert-item-card.alert-sev-med {
+  border-left: 3px solid #d97706;
+}
+
+.alert-item-card.alert-sev-low {
+  border-left: 3px solid var(--accent-teal);
+}
+
+.alert-item-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.alert-pipe-label {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.alert-time {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.alert-item-details {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  color: var(--text-secondary);
+  flex-wrap: wrap;
+}
+
+.alert-separator {
+  color: var(--text-subtle);
+}
+
+/* --------------------------------------------------------------------------
+   What-If Panel
+   -------------------------------------------------------------------------- */
+.whatif-panel-content {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.whatif-notice {
+  font-size: 11px;
+  color: var(--text-muted);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-xs);
+  padding: 6px 10px;
+}
+
+.whatif-pipe-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  max-height: 120px;
+  overflow-y: auto;
+  padding: 6px;
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-surface);
+}
+
+.whatif-checkbox-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: var(--radius-xs);
+  font-size: 11px;
+  font-family: var(--font-mono);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-default);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.whatif-checkbox-pill.selected {
+  background-color: var(--accent-blue-light);
+  border-color: var(--accent-blue-border);
+  color: var(--accent-blue-dark);
+  font-weight: 600;
+}
+
+.whatif-checkbox-pill input {
+  cursor: pointer;
+}
+
+.whatif-run-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 7px 14px;
+  border-radius: var(--radius-sm);
+  background-color: var(--accent-blue);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  transition: background-color 0.15s ease;
+}
+
+.whatif-run-btn:hover:not(:disabled) {
+  background-color: var(--accent-blue-dark);
+}
+
+.whatif-run-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.whatif-result-card {
+  padding: 12px;
+  border-radius: var(--radius-sm);
+  background-color: var(--bg-subtle);
+  border: 1px solid var(--border-default);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.whatif-result-title {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.whatif-affected-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   Send Test Reading Form
+   -------------------------------------------------------------------------- */
+.test-reading-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+  align-items: flex-end;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.form-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.form-select,
+.form-input {
+  height: 34px;
+  padding: 0 10px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-default);
+  background-color: var(--bg-surface);
+  color: var(--text-primary);
+  font-size: 12px;
+  outline: none;
+}
+
+.form-select:focus,
+.form-input:focus {
+  border-color: var(--accent-blue);
+}
+
+.form-submit-btn {
+  height: 34px;
+  padding: 0 14px;
+  border-radius: var(--radius-sm);
+  background-color: var(--accent-teal);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.15s ease;
+}
+
+.form-submit-btn:hover:not(:disabled) {
+  background-color: var(--accent-teal-dark);
+}
+
+.form-submit-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* --------------------------------------------------------------------------
+   State Views (Loading, Empty, Error)
+   -------------------------------------------------------------------------- */
+.water-state-card {
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-default);
+  border-radius: var(--radius-md);
+  padding: 48px 24px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.water-state-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.water-state-icon.error {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.water-state-icon.loading {
+  background-color: var(--accent-blue-light);
+  color: var(--accent-blue);
+  border: 1px solid var(--accent-blue-border);
+}
+
+.water-state-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.water-state-desc {
+  font-size: 12px;
+  color: var(--text-muted);
+  max-width: 480px;
+  margin: 0 auto;
+}
+
+.water-retry-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 16px;
+  border-radius: var(--radius-sm);
+  background-color: var(--text-primary);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  transition: opacity 0.15s ease;
+}
+
+.water-retry-btn:hover {
+  opacity: 0.9;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Breakpoints
+   -------------------------------------------------------------------------- */
+@media (max-width: 1100px) {
+  .water-kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .water-split-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .test-reading-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .form-submit-btn {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .water-kpi-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .test-reading-form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-submit-btn {
+    grid-column: span 1;
+  }
+}
+
